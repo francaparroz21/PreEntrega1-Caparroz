@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+/* Variables */
+:root {
+    /* Paleta */
+    --purpura: #A269E6;
+    --naranja: #BA4A00;
+    --blanco: #C8C8D3;
+    --azul: #356A96;
+    --negro: #181B1D;
+    --rosa: #E9C1F1;
+    --cinderella: #fbcbcc;
+    --lavender-gray: #bcbcdb;
+    --sweet-pink: #fb9cac;
+    --cinderella: #fcdfe0;
+    --melanie: #e0c3d3;
+    --melanie: #e3c6dc;
+    --melon: #fcb4b4;
+    --wisp-pink: #fce4ec;
+    --linen: #fcf2f2;
+}
+
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*DESREBOOT*/
+.btn
+
+
+/* NAVBAR  */
+
+header .navbar,.fixed-top{
+    background-color: var(--linen);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.52);
+}
+
+header .navbar a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+header .navbar ul {
+    list-style-type: none;
+}
+
+header .navbar .navbar-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .navbar .navbar-left a img {
+    max-width: 80px;
+    min-width: 80px;
+    margin-right: 20px;
+}
+
+header .navbar .navbar-left ul {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar .navbar-left ul * {
+    margin: 10px;
+}
+
+header .navbar .navbar-left ul div li a:hover {
+    color: green;
+    transition: all .3s ease-in-out, color .3s ease-in-out;
+}
+
+header .navbar .navbar-left ul div li {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*CART*/
+.cart-tittle{
+    margin: auto;
+}
+
+/*  FOOTER  */
+
+main,
+footer {
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(rgba(20, 7, 12, 0.75), rgba(20, 7, 12, 0.75)), url(../images/background_eyebrow.PNG) no-repeat center center fixed;
+    color: var(--blanco);
+    background-size: cover;
+}
+
+footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialNetworks{
+    display: flex;
+}
+
+footer div a {
+    width: 80px;
+    padding-left: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+}
+
+footer div a img {
+    width: 30px;
+}
+
+footer div a img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    transition: 0.4s;
+}
+
+/*Estilos para javascript*/
+nav>* {
+    padding: 10px;
+}
+
+.buttonsProductsDiv {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#pNameForm,
+#pPriceForm {
+    color: red;
+}
+
+#h2Products {
+    text-align: center;
+}
+
+#divProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10em;
+}
+
+#divProducts>div {
+    width: 300px;
+    padding: 30px;
+    height: 650px;
+}
+
+#divProducts>div > * {
+    padding: 5px;
+}
+
+#divProducts>p {
+    padding: 10px;
+}
+
+#dateNow{
+    color: var(--linen);
+}
+
+.added {
+    display: flex;
+    justify-content: end;
+    color: green;
+}
+
+.buttonsCart {
+    display: inline;
+}
+
+.addToCart {
+    background-color: var(--linen);
+}
+.sectionProduct{
+    border: 1px solid #faf8f8;
+}
+
+.nameProduct{
+    text-align: center;
+}
+
+#pDate{
+    position: relative;
+    top: 50px;
+}
+
+.imgProduct{
+    width: auto;
+    height: 300px;
+}
+
+#buyButton{
+    background-color: #00B210;
+}
+#deleteAll{
+    background-color: red;
+}
+
+.interactionButtonsCart{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.addToCartFlex{
+    display: flex;
+    justify-content:right;
+}
+#offcanvasWithBackdropLabel{
+    margin: auto;
+}
+
+.sectionProduct{
+   padding-top: 100px;
+}
+
+
+.divProductCart{
+    padding: 20px;
+}
+
+.divProductCartFlex{
+    display: flex;
+}
+
+.nameProductCart{
+    text-align: center;
+}
+
+.productCart{
+    width: 120px;
+}
+
+#totalBuyPrice{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.offcanvas{
+    background: rgb(85,15,69);
+background: linear-gradient(90deg, rgba(85,15,69,1) 0%, rgba(89,50,86,1) 100%);
+}
+
+#cartCount{
+    color: #8699A5;
+}
+
+#cartIcon{
+    width: 40px;
+    filter: invert(25%);
+}
+
+#cartIconToggle{
+    padding: 10px;
+    border-radius: 28px;
+}
+
+#buyAndDeleteAllButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+#cartIconToggle:hover{
+    transition: all 0.5s;
+    background-color:#636060;
+}
