@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="Bossy"
-      content="Web site of Bossy created using React"
-    />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
-    <title>Bossy | Inicio</title>
-  </head>
-  <body>
-    <main id="root">
 
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="Bossy" content="Web site of Bossy created using React" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+  <title>Bossy | Inicio</title>
+</head>
+
+<body>
+  <main>
+
+    <div id="root">
+
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="offcanvasWithBackdropLabel">CART</h2>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <hr style="color: black;">
+      <div class="offcanvas-body" id="cartProductsContainer">
+
+      </div>
+    </div>
+  </main>
   <script src="./bootstrap/bootstrap.js"></script>
+</body>
+
 </html>
