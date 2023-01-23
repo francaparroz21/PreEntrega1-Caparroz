@@ -34,8 +34,13 @@
   color: var(--negro);
 }
 
-.navbar div li {
+.navbar li {
   list-style-type: none;
+  width: auto;
+}
+
+.nav-item{
+  padding: 10px;
 }
 
 .navbar{

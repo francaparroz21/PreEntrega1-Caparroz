@@ -3,44 +3,48 @@ import cart from "../assets/cart.png"
 
 const ListNavbar = (props) => {
     return (
-        <li className={props.className}><a className="nav-link" aria-controls={props.ariacontrols} data-bs-target={props.target} data-bs-toggle={props.toggle} type={props.type} id={props.id} href={props.route}><img src={props.routeImg} alt={props.alt} />{props.content}</a></li>
+        <li className={props.className}><a className="nav-link" href={props.route}>{props.content}</a></li>
+    )
+}
+
+const LogoItem = (props) => {
+    return (
+        <a className="nav-link" aria-controls={props.ariacontrols} data-bs-target={props.target} data-bs-toggle={props.toggle} type={props.type} id={props.id} href={props.route}><img src={props.routeImg} alt={props.alt} /></a>
     )
 }
 
 const Navbar = () => {
     return (
-        <header>
-            <nav className="fixed-top bg-body-tertiary navbar navbar-expand-md">
-                <div className="navbar-left">
-                    <div>
-                        <ListNavbar route="./index.html" routeImg={logo} />
-                    </div>
-                    <div id="collapse_items" className="collapse navbar-collapse">
-                        <ul className="navbar-nav ms-3">
-                            <div>
+        <nav className="fixed-top bg-body-tertiary navbar navbar-expand-md">
+            <div className="navbar-left">
+                <div>
+                    <LogoItem route="./index.html" routeImg={logo} />
+                </div>
+                <div id="collapse_items" className="collapse navbar-collapse">
+                    <ul className="navbar-nav ms-3">
+                        <div>
                             <ListNavbar className="nav-item" content="Inicio" route="./index.html" />
-                            </div>
-                            <div>
+                        </div>
+                        <div>
                             <ListNavbar className="nav-item" content="Catalogo" route="./pages/catalogue.html" />
-                            </div>
-                            <div>
+                        </div>
+                        <div>
                             <ListNavbar className="nav-item" content="Servicios" route="./pages/services.html" />
-                            </div>
-                        </ul>
-                    </div>
+                        </div>
+                    </ul>
                 </div>
-                <div className="navbar-right">
-                    <div>
-                        <ListNavbar id='cartIconToggle' type="button" toggle="offcanvas" target="#offcanvasWithBackdrop"
-                            ariacontrols="offcanvasWithBackdrop" routeImg={cart} />
-                    </div>
+            </div>
+            <div className="navbar-right">
+                <div>
+                    <LogoItem id='cartIconToggle' type="button" toggle="offcanvas" target="#offcanvasWithBackdrop"
+                        ariacontrols="offcanvasWithBackdrop" routeImg={cart} />
                 </div>
-                <button type="button" className="navbar-toggler" data-bs-toggle="collapse modal" data-bs-target="#collapse_items">
-                    <span className="navbar-toggler-icon">
-                    </span>
-                </button>
-            </nav>
-        </header>
+            </div>
+            <button type="button" className="navbar-toggler" data-bs-toggle="collapse modal" data-bs-target="#collapse_items">
+                <span className="navbar-toggler-icon">
+                </span>
+            </button>
+        </nav>
     );
 }
 export default Navbar
