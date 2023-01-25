@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PreEntrega1-Caparroz/static/css/main.8a099dcd.css",
+    "main.js": "/PreEntrega1-Caparroz/static/js/main.84b63c76.js",
+    "static/media/logo.png": "/PreEntrega1-Caparroz/static/media/logo.d86554ce2f29d7e812d5.png",
+    "static/media/cart.png": "/PreEntrega1-Caparroz/static/media/cart.b429867eb12f9c767a7a.png",
+    "index.html": "/PreEntrega1-Caparroz/index.html",
+    "main.8a099dcd.css.map": "/PreEntrega1-Caparroz/static/css/main.8a099dcd.css.map",
+    "main.84b63c76.js.map": "/PreEntrega1-Caparroz/static/js/main.84b63c76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a099dcd.css",
+    "static/js/main.84b63c76.js"
+  ]
+}
