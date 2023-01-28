@@ -1,5 +1,4 @@
 import CartWidget from "./CartWidget"
-import ItemListContainer from "./ItemListContainer"
 import logo from "../assets/logo.png"
 import cart from "../assets/cart.png"
 
@@ -9,13 +8,13 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-md">
                 <div className="navbar-left">
                     <div>
-                        <ItemListContainer route="./index.html" routeImg={logo} />
+                        <a className="nav-link" href="./"><img src={logo} alt="" /></a>
                     </div>
                     <div className="collapse navbar-collapse" id="options">
                         <ul className="navbar-nav">
-                            <ItemListContainer className="nav-item" content="Inicio" route="./index.html" />
-                            <ItemListContainer className="nav-item" content="Catalogo" route="./" />
-                            <ItemListContainer className="nav-item" content="Servicios" route="./" />
+                            <li className="nav-item"><a className="nav-link" href="./">Inicio</a></li>
+                            <li className="nav-item"><a className="nav-link" href="./">Catalogo</a></li>
+                            <li className="nav-item"><a className="nav-link" href="./">Servicios</a></li>
                         </ul>
                     </div>
                 </div>
